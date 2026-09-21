@@ -59,11 +59,11 @@ button:active {
 }
 
 #reset {
-    background: #e74c3c;
+    background: #f39c12;
 }
 
 #reset:hover {
-    background: #c0392b;
+    background: #d68910;
 }
 
 #double {
