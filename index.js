@@ -3,6 +3,7 @@ const number = document.getElementById("number");
 const increaseButton = document.getElementById("increase");
 const decreaseButton = document.getElementById("decrease");
 const resetButton = document.getElementById("reset");
+const doubleButton = document.getElementById("double");
 
 // Variable que guarda el valor actual
 let counter = 0;
@@ -25,5 +26,10 @@ decreaseButton.addEventListener("click", () => {
 
 resetButton.addEventListener("click", () => {
     counter = 0;
+    updateView();
+});
+
+doubleButton.addEventListener("click", () => {
+    counter *= 2;
     updateView();
 });

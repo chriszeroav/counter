@@ -19,7 +19,6 @@ body {
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 300px;
 }
 
 h1 {
@@ -65,4 +64,8 @@ button:active {
 
 #reset:hover {
     background: #c0392b;
+}
+
+#double {
+    background: #29c724;
 }
