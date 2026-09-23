@@ -5,21 +5,14 @@ const decreaseButton = document.getElementById("decrease");
 const resetButton = document.getElementById("reset");
 const doubleButton = document.getElementById("double");
 
-// Recuperamos el valor guardado
 let counter = Number(localStorage.getItem("counter")) || 0;
-if (counter === null) {
-  counter = 0;
-} else {
-  counter = Number(counter);
-}
+number.textContent = counter;
 
-// Función para actualizar la vista
 function updateView() {
   number.textContent = counter;
-  // Guardamos el valor actual
   localStorage.setItem("counter", counter);
 }
-// Eventos de los botones
+
 increaseButton.addEventListener("click", () => {
   counter++;
   updateView();
@@ -39,5 +32,3 @@ doubleButton.addEventListener("click", () => {
   counter *= 2;
   updateView();
 });
-
-updateView();
