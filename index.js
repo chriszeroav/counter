@@ -1,5 +1,6 @@
 // Seleccionamos los elementos del DOM
 const number = document.getElementById("number");
+const warning = document.getElementById("warning");
 const increaseButton = document.getElementById("increase");
 const decreaseButton = document.getElementById("decrease");
 const resetButton = document.getElementById("reset");
@@ -11,7 +12,10 @@ number.textContent = counter;
 function updateView() {
   number.textContent = counter;
   localStorage.setItem("counter", counter);
+  warning.classList.toggle("hidden", counter >= 0);
 }
+
+updateView();
 
 increaseButton.addEventListener("click", () => {
   counter++;
